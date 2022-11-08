@@ -6,4 +6,8 @@
   background-color: #FA5959;
 }
 
+.customMenu {
+  flex-grow: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
