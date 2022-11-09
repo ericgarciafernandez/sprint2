@@ -9,3 +9,9 @@
 .customMenu {
     flex-grow: 0;
 }
+
+@media (max-width:992px) {
+    .containerImg {
+        margin-top: 10%;
+    }
+}
