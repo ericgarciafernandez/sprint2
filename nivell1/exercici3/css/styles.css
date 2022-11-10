@@ -1,0 +1,23 @@
+.btn-primary {
+  background-color: #5265E1;
+}
+
+.btn-secondary {
+  background-color: #FA5959;
+}
+
+.customMenu {
+  flex-grow: 0;
+}
+
+.imgCard {
+  width: 30%;
+}
+
+@media (max-width: 992px) {
+  .containerImg {
+    margin-top: 10%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
