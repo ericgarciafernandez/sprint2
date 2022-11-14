@@ -10,17 +10,33 @@
     flex-grow: 0;
 }
 
-.imgCard{
-    width: 30%;
+.nav-link {
+    color: #495057;
 }
 
-#accordionFlushExample{
-    margin: auto;
-    width: 50%;
+.nav-tabs .nav-link.active,
+.nav-link:hover {
+    color: #495057;
+    border-color: #fff #fff #FA5959 #fff;
+}
+
+#secondCard {
+    margin-top: 3%;
+}
+
+#thirdCard {
+    margin-top: 6%;
+}
+
+hr {
+    border: 1px dotted lightgray;
 }
 
 @media (max-width:992px) {
     .containerImg {
         margin-top: 10%;
+    }
+    .nav-link{
+        width: 100%;
     }
 }

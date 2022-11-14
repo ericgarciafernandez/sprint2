@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo-bookmark.svg" alt="">
@@ -45,7 +45,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 col-md-12 col-sm-10">
+            <div class="col-lg-5 col-md-12 col-sm-10 order-last order-lg-first">
                 <div>
                     <h1>A Simple Bookmark Manager</h1>
                     <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see
@@ -70,7 +70,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <nav class="d-flex justify-content-center">
+                <nav class="d-flex justify-content-center text-center">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="nav-simple-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-simple" type="button" role="tab" aria-controls="nav-simple"
@@ -84,19 +84,49 @@
                             Sharing</button>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="row p-5">
-                        <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-1.svg" alt=""
-                                class="img-fluid">
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="nav-simple" aria-labelledby="nav-simple-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-1.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Bookmark in one click</h1>
+                                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+                                    you
+                                    complete control over how you manage your favourite sites.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
-                            <h1>Bookmark in one click</h1>
-                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
-                                complete control over how you manage your favourite sites.</p>
-                            <button class="btn btn-primary w-50">More info</button>
+                    </div>
+                    <div class="tab-pane fade" id="nav-speedy" aria-labelledby="nav-speedy-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-2.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Intelligent search</h1>
+                                <p>Our powerful search feature will help you find saves sites in no time at all. No need
+                                    to trawl through all of your bookmarks.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-east" aria-labelledby="nav-east-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-3.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Share your bookmarks</h1>
+                                <p>Easily share your bookmarks and collections with others. Create a shareable link that
+                                    you can send at click of a button.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>

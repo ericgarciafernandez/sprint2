@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Exercici 5</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo-bookmark.svg" alt="">
@@ -37,11 +40,12 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 col-md-12 col-sm-10">
+            <div class="col-lg-5 col-md-12 col-sm-10 order-last order-lg-first">
                 <div>
                     <h1>A Simple Bookmark Manager</h1>
                     <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see
@@ -66,31 +70,67 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <ul class="nav nav-tabs mb-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Simple Bookmarking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Speedy Searching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">East Sharing</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row p-5">
-            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-1.svg" alt=""
-                    class="img-fluid"></div>
-            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
-                <h1>Bookmark in one click</h1>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
-                    complete control over how you manage your favourite sites.</p>
-                <button class="btn btn-primary w-50">More info</button>
-            </div>
-        </div>
-    </div>
+                <nav class="d-flex justify-content-center text-center">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-simple-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-simple" type="button" role="tab" aria-controls="nav-simple"
+                            aria-selected="true">Simple
+                            Bookmarking</button>
+                        <button class="nav-link" id="nav-speedy-tab" data-bs-toggle="tab" data-bs-target="#nav-speedy"
+                            type="button" role="tab" aria-controls="nav-speedy" aria-selected="false">Speedy
+                            Searching</button>
+                        <button class="nav-link" id="nav-east-tab" data-bs-toggle="tab" data-bs-target="#nav-east"
+                            type="button" role="tab" aria-controls="nav-east" aria-selected="false">East
+                            Sharing</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="nav-simple" aria-labelledby="nav-simple-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-1.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Bookmark in one click</h1>
+                                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+                                    you
+                                    complete control over how you manage your favourite sites.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-speedy" aria-labelledby="nav-speedy-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-2.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Intelligent search</h1>
+                                <p>Our powerful search feature will help you find saves sites in no time at all. No need
+                                    to trawl through all of your bookmarks.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-east" aria-labelledby="nav-east-tab">
+                        <div class="row p-5">
+                            <div class="col-lg-6 col-md-8 col-sm-12"><img src="img/illustration-features-tab-3.svg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-12 d-flex flex-column justify-content-center p-5">
+                                <h1>Share your bookmarks</h1>
+                                <p>Easily share your bookmarks and collections with others. Create a shareable link that
+                                    you can send at click of a button.</p>
+                                <button class="btn btn-primary w-50">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+
+    </div>
     <div class="container">
         <div class="row d-flex flex-column align-items-center text-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -99,36 +139,42 @@
                     you'd like us to prioritize.</p>
             </div>
         </div>
-        <div class="row mb-5">
-            <div class="card-group ">
-                <div class="card text-center border-info p-3">
+        <div class="row d-flex justify-content-center mb-5">
+            <div class="col-lg-3 col-7" id="firstCard">
+                <div class="card text-center p-3 shadow ">
                     <img src="img/logo-chrome.svg" class="rounded mx-auto d-block" alt="Google Chrome">
                     <div class="card-body">
                         <h5 class="card-title">Add to Chrome</h5>
                         <p class="card-text">Minimum version 62</p>
+                        <hr>
                         <a href="#" class="btn btn-primary">Add & Install Extension</a>
                     </div>
                 </div>
-                <div class="card text-center border-info p-3">
+            </div>
+            <div class="col-lg-3 col-7" id="secondCard">
+                <div class="card text-center p-3 shadow ">
                     <img src="img/logo-firefox.svg" class="rounded mx-auto d-block" alt="Google Chrome">
                     <div class="card-body">
                         <h5 class="card-title">Add to Firefox</h5>
                         <p class="card-text">Minimum version 55</p>
+                        <hr>
                         <a href="#" class="btn btn-primary">Add & Install Extension</a>
                     </div>
                 </div>
-                <div class="card text-center border-info p-3">
+            </div>
+            <div class="col-lg-3 col-7" id="thirdCard">
+                <div class="card text-center p-3 shadow">
                     <img src="img/logo-opera.svg" class="rounded mx-auto d-block" alt="Google Chrome">
                     <div class="card-body">
                         <h5 class="card-title">Add to Opera</h5>
                         <p class="card-text">Minimum version 46</p>
+                        <hr>
                         <a href="#" class="btn btn-primary">Add & Install Extension</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row d-flex flex-column align-items-center text-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -137,65 +183,78 @@
                     feel free to email us.</p>
             </div>
         </div>
-        <div class="row mb-5">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="flush-collapseOne">
-                            What is Bookmark?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">Accordion 1 text</div>
+        <div class="row d-flex justify-content-center mb-5">
+            <div class="col-8">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="flush-collapseOne">
+                                What is Bookmark?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                vel
+                                dolor enim. Vestibulum tempus turpis ut ullamcorper pulvinar. Nulla facilisi.
+                                Pellentesque
+                                sed metus vitae eros suscipit venenatis. </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            How can I request a new browser
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">Accordion 2 text</div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                How can I request a new browser
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">Pellentesque elementum tortor non augue pulvinar, vitae molestie
+                                nunc tempor. Pellentesque sed consectetur lacus, fermentum rutrum leo. </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Is there a mobile app?
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">Accordion 3 text</div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Is there a mobile app?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body"> Nullam commodo eget lorem vel elementum. Sed feugiat vitae nisi
+                                at
+                                fringilla. Sed fermentum nisi in malesuada tincidunt. Sed lorem nisi, maximus quis
+                                condimentum ac, scelerisque id lorem. </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            What about other Chromium browsers
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body">Accordion 4 text</div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                What about other Chromium browsers
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">Vivamus nibh ipsum, facilisis nec volutpat semper, tempus ac
+                                magna.
+                                Nullam eget rutrum nunc, nec varius nisi. Suspendisse fermentum lacus vitae massa
+                                faucibus,
+                                vel sollicitudin urna sagittis.</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container d-flex justify-content-center mt-3">
                 <button class="btn btn-primary">More info</button>
             </div>
-
         </div>
     </div>
 
@@ -225,44 +284,30 @@
         </div>
     </div>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+            <div class="container d-flex flex-column justify-content-center flex-wrap">
                 <a class="navbar-brand" href="#">
                     <img src="img/logo-bookmark.svg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navBarResponsive" aria-controls="navBarResponsive" aria-expanded="false"
-                    aria-label="Toggle for mobile and tablet">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item m-3">
-                            <a class="nav-link text-light">FEATURES</a>
-                        </li>
-                        <li class="nav-item m-3">
-                            <a class="nav-link text-light">PRICING</a>
-                        </li>
-                        <li class="nav-item m-3">
-                            <a class="nav-link text-light">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="collapse navbar-collapse customMenu" id="navBarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item m-3">
-                            <img src="img/icon-facebook.svg" alt="">
-                        </li>
-                        <li class="nav-item m-3">
-                            <img src="img/icon-twitter.svg" alt="">
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-3">
+                        <a class="nav-link text-light">FEATURES</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link text-light">PRICING</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link text-light">CONTACT</a>
+                    </li>
+
+                    <li class="nav-item m-3">
+                        <img src="img/icon-facebook.svg" alt="Icon Facebook">
+                        <img src="img/icon-twitter.svg" alt="Icon Twitter">
+                    </li>
+                </ul>
             </div>
         </nav>
     </footer>
-
-
 </body>
 
 </html>
